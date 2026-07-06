@@ -9,7 +9,7 @@ while True:
 
 
     def get_stock(ticker):
-            data = yf.download(ticker, start = '2026-01-01', end = pd.Timestamp.today().strftime('%Y-%m-%d')) 
+            data = yf.download(ticker, start = '2025-01-01', end = pd.Timestamp.today().strftime('%Y-%m-%d')) 
             return data
     data = get_stock(Choose_stock)
     if data.empty:
