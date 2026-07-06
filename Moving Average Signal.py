@@ -32,6 +32,5 @@ while True:
         plt.legend()
         plt.xticks(rotation=45, fontsize=8)
         plt.xlabel("Date", fontsize=10)
-
         plt.show()
         break
