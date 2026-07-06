@@ -18,7 +18,6 @@ for stock in stocks:
         edgecolor ='black',
     )
 print(pd.DataFrame(for_data).sort_values(by='mean', ascending=False))
-# plt.show()
 
 
 
