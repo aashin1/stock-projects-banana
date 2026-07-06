@@ -15,11 +15,10 @@ for stock in stocks:
     data["Signal"] = (MA20 > MA50).astype(int)
     data["MA20"] = MA20
     data["MA50"] = MA50
+print(data[["Close", "MA20", "MA50", "Signal"]].tail(10))
 plt.plot(raw_price, label = 'Raw Close Price')
 plt.plot(MA20, label = 'Rolling Mean 20 Days')
 plt.plot(MA50, label = 'Rolling Mean 50 Days')
 plt.title("Raw Closing price, MA20, MA50")
 plt.legend()
 plt.show()
-
-print(data[["Close", "MA20", "MA50", "Signal"]].tail(10))
