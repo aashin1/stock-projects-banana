@@ -35,6 +35,6 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size =.2, shuffle
 model = RandomForestClassifier()
 model.fit(x_train, y_train)
 predictions = model.predict(x_test) 
-print(accuracy_score(y_test, predictions))
+print("Confidence of:", accuracy_score(y_test, predictions))
 
 
